@@ -1,0 +1,99 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    background: #161616;
+}
+
+
+/*marca de agua*/
+.mark {
+    display: inline-block;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    font-size: 35vw;
+    text-align: top left;
+    margin: 0;
+    overflow: hidden;
+    opacity: 0.03;
+    color: #ffffff;
+}
+
+/*iconos*/
+
+.icons {
+    display: grid;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    box-sizing: border-box;
+    border: solid 0.5rem #179cac;
+    border-radius: 0.5rem;
+}
+
+.icon:first-child{
+    
+}
+
+ /*sección*/
+.grid {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 5fr 15fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "main section nav";
+
+}
+
+.section {
+    grid-area: section;
+    color: #ffffff;
+    font-size: 6.2rem;
+    place-self: center end;
+}
+
+.section p strong {
+    color: #fd5457;
+    margin-left: -1.5rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.nav {
+    grid-area: nav;
+    align-self:center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.nav ul li a {
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 1.2rem;
+}
+
+.nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    writing-mode: vertical-lr;
+    transform:rotate(180deg);
+    padding: 25px 10px;
+}
+
+.main {
+    grid-area: main;
+    color: #ffffff;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    align-self: end;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.main p {
+    padding: 8rem 1rem ;
+    background-color: rgba(0, 0, 0, 0);
+}
